@@ -1,0 +1,89 @@
+.website_small_heading h1{
+    font-size: 40px;
+}
+
+.website_small_heading h4{
+    font-weight: 400;
+}
+
+.website_feature1_image img{
+    width: 800px;
+    margin-top: 5rem;
+    padding-right: 35rem;
+}
+
+.website_feature1_detail{
+    padding-left: 60rem;
+    margin-top: -30rem;
+}
+
+.website_feature1_detail h1{
+    text-align: left;
+    font-size: 40px;
+}
+
+.website_feature1_detail p{
+    text-align: left;
+    font-size: 20px;
+}
+
+.website_feature2_image img{
+    margin-top: 15rem;
+    padding-left: 35rem;
+    width: 800px;
+}
+
+.website_feature2_detail h1{
+    font-size: 40px;
+    text-align: left;
+}
+
+.website_feature2_detail p{
+    font-size: 20px;
+    text-align: left;
+}
+
+.website_feature2_detail button{
+    cursor: pointer;
+    margin-right: 80rem;
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.website_feature2_detail button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.website_feature2_detail{
+    margin-top: -33rem;
+    padding-left: 5rem;
+}
+
+.website_feature3_image img{
+    margin-top: 10rem;
+    padding-right: 35rem;
+    width: 800px;
+}
+
+.website_feature3_detail h1{
+    font-size: 40px;
+    text-align: left;
+}
+
+.website_feature3_detail p{
+    font-size: 20px;
+    text-align: left;
+}
+
+.website_feature3_detail{
+    padding-left: 60rem;
+    margin-top: -30rem;
+}
