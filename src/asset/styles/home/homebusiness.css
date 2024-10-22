@@ -1,0 +1,71 @@
+.home-business-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .box-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Boxes ko wrap karne ke liye */
+  }
+  
+  .box {
+    width: 300px;
+    height: 450px; /* Image aur content ko samajhne ke liye height badhai gayi hai */
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Box ke andar alignment ke liye */
+  }
+  
+  .box img {
+    width: 100%;
+    height: 150px; /* Image ki height badha di gayi hai */
+    object-fit: cover;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  h5 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  /* Responsive code for smaller screens */
+@media (max-width: 768px) {
+    .box-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box {
+      width: 100%;
+      max-width: 350px; /* Limit the max width for smaller screens */
+      margin-bottom: 20px; /* Add some space between boxes */
+    }
+  }

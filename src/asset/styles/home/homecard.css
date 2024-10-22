@@ -1,0 +1,96 @@
+/* Common styles for all cards */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  
+  
+  /* Animation on hover: card moves out of a box-like effect */
+  .card:hover {
+    transform: translateY(-10px);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+  }
+  
+  /* First Card Styles */
+  .card-one {
+    background-color: skyblue;
+    color: #000026;
+    --text-color: #000026;
+    --bg-color: skyblue;
+  }
+  
+  /* Second Card Styles */
+  .card-two {
+    background-color: #CC7722;
+    color: #2E1503;
+    --text-color: #2E1503;
+    --bg-color: #CC7722;
+  }
+  
+  /* Third Card Styles */
+  .card-three {
+    background-color: #B099C8;
+    color: #151B54;
+    --text-color: #151B54;
+    --bg-color: #B099C8;
+  }
+  
+  /* Heading and paragraph styles */
+  .card-heading {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-paragraph {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Styles for smaller screens */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Stack the cards vertically */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Cards will take most of the screen width on smaller screens */
+    }
+}
+
+/* For extra small devices, like mobile phones */
+@media (max-width: 480px) {
+    .card-heading {
+        font-size: 2rem; /* Smaller heading size for mobile */
+    }
+
+.card-two{
+   margin-top: 10px;
+}
+
+.card-three{
+  margin-top: 10px;
+}
+
+    .card-paragraph {
+        font-size: 0.9rem; /* Slightly smaller text for better readability */
+    }
+
+    .card {
+        padding: 15px; /* Reduce padding for better fit on mobile */
+    }
+}

@@ -1,0 +1,94 @@
+.home-list-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #D6EBF2; /* Background color for the whole section */
+    border-radius: 10px; /* Optional: Adding rounded corners */
+  }
+  
+  .left-section {
+    flex: 1; /* Takes up the left side */
+    margin-right: 20px;
+  }
+  
+  .left-section h1 {
+    padding-left: 10rem;
+    margin-top: -15rem;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .left-section p {
+    margin-bottom: 10px;
+    margin-top: 15rem;
+  }
+  
+  .right-section {
+    flex: 2; /* Takes up the right side */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .list {
+    flex: 1; /* Each list takes half of the right section */
+  }
+  
+  .list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list li {
+    padding-left: 10rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .check-icon {
+    margin-right: 10px;
+    background-color: skyblue; /* Background color for the icon */
+    padding: 5px;
+    border-radius: 50%; /* Make the icon circular */
+    color: white;
+  }
+  
+  /* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .home-list-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left-section {
+    margin-right: 0;
+    margin-bottom: 20px; /* Add space below the left section */
+    text-align: center; /* Center the text for mobile */
+  }
+
+  .left-section h1 {
+    font-size: 20px;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .left-section p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .right-section {
+    flex-direction: column; /* Stack lists in a column */
+    gap: 20px;
+  }
+
+  .list li {
+    padding-left: 0;
+    font-size: 14px;
+  }
+
+  .check-icon {
+    margin-right: 5px;
+    padding: 3px;
+  }
+}

@@ -1,0 +1,125 @@
+.home-sales {
+    text-align: center;
+    margin: 100px;
+  }
+  
+.home-sales h1{
+    font-size: 40px;
+}
+
+  .image-grid {
+    cursor: pointer;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 0;
+    transition: height 0.3s ease;
+    border-radius: 0 0 50% 50%; /* Rounded bottom shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container:hover .overlay {
+    height: 50%; /* On hover, show overlay from the bottom */
+  }
+  
+  .view-site {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .view-site {
+    opacity: 1; /* Make "View Site" visible on hover */
+  }
+  
+  /* Responsive styling for smaller screens */
+
+/* For tablet screens */
+@media (max-width: 1024px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+
+    .home-sales h1 {
+        font-size: 35px;
+    }
+
+    .home-sales h2 {
+        font-size: 18px; /* Slightly increased font size */
+    }
+
+    .image-container img {
+        width: 100%; /* Full width for images on tablet screens */
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column */
+    }
+
+    .image-container img {
+        width: 100%; /* Increased image size on mobile */
+        margin: auto;
+    }
+
+    .home-sales h1 {
+        font-size: 32px; /* Slightly increased font size */
+    }
+
+    .home-sales h2 {
+        font-size: 16px; /* Increased font size for better readability */
+    }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column */
+    }
+
+    .image-container img {
+        width: 100%; /* Slightly smaller for very small screens */
+        margin: auto;
+    }
+
+    .home-sales h1 {
+        font-size: 30px; /* Increased heading size */
+    }
+
+    .home-sales h2 {
+        font-size: 15px; /* Slightly larger font size */
+    }
+}

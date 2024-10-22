@@ -1,0 +1,139 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: px 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+/* Left section with logo and navigation */
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo {
+  cursor: pointer;
+  width: 90px;
+  margin-left: 10px;
+}
+
+/* Mobile menu icon */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Navigation list styling */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-left: 15px;
+  white-space: nowrap;
+}
+
+.nav-list li {
+  cursor: pointer;
+  
+}
+
+/* Submenu */
+.submenu-content {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  top: 60px; /* Adjust based on header height */
+}
+
+.submenu-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.submenu-content li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+/* Right section with login and signup button */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.login {
+  cursor: pointer;
+  padding-left: 42rem;
+}
+
+.signup-btn {
+  padding: 10px 16px;
+  margin-right: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:  transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-btn:hover{
+  transform:  scale(1.1);
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  /* Hide the nav list and show the menu icon */
+  .nav-list {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    transition: 0.3s ease;
+  }
+
+  .nav-list.active {
+    left: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    padding-left: 10px;
+  }
+
+.login{
+  padding-left: 0;
+}
+
+  .right-section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .left-section{
+    flex-grow: 1;
+  }
+}
