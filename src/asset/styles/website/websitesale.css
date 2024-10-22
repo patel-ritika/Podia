@@ -1,0 +1,125 @@
+.website-sales {
+    text-align: center;
+    margin: 100px;
+  }
+  
+.website-sales h1{
+    font-size: 40px;
+}
+
+  .website_image-grid {
+    cursor: pointer;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .website_image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .website_image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+  }
+  
+  .website_image-container:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 0;
+    transition: height 0.3s ease;
+    border-radius: 0 0 50% 50%; /* Rounded bottom shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .website_image-container:hover .overlay {
+    height: 50%; /* On hover, show overlay from the bottom */
+  }
+  
+  .view-site {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .website_image-container:hover .view-site {
+    opacity: 1; /* Make "View Site" visible on hover */
+  }
+  
+  /* Responsive styling for smaller screens */
+
+/* For tablet screens */
+@media (max-width: 1024px) {
+    .website_image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+
+    .website-sales h1 {
+        font-size: 35px;
+    }
+
+    .website-sales h2 {
+        font-size: 18px; /* Slightly increased font size */
+    }
+
+    .website_image-container img {
+        width: 100%; /* Full width for images on tablet screens */
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .website_image-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column */
+    }
+
+    .website_image-container img {
+        width: 100%; /* Increased image size on mobile */
+        margin: auto;
+    }
+
+    .website-sales h1 {
+        font-size: 32px; /* Slightly increased font size */
+    }
+
+    .website-sales h2 {
+        font-size: 16px; /* Increased font size for better readability */
+    }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+    .website_image-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column */
+    }
+
+    .website_image-container img {
+        width: 100%; /* Slightly smaller for very small screens */
+        margin: auto;
+    }
+
+    .website-sales h1 {
+        font-size: 30px; /* Increased heading size */
+    }
+
+    .website-sales h2 {
+        font-size: 15px; /* Slightly larger font size */
+    }
+}
