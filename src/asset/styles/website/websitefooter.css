@@ -1,0 +1,38 @@
+.websitefooter{
+    margin-top: 100px;
+    background-color: #EE9A4D;
+    height: 400px;
+}
+
+.websitefooter_detail{
+    padding-top: 3rem;
+}
+
+.websitefooter_detail h1{
+    color: #2E1503;
+    font-size: 40px;
+}
+
+.websitefooter_detail h3{
+    font-size: 20px;
+    color: #2E1503;
+    font-weight: 400;
+}
+
+.websitefooter_detail button{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #2E1503;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.websitefooter_detail button:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: #2E1503;
+}

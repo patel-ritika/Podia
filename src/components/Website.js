@@ -5,6 +5,7 @@ import WebsiteFeature from './website/WebsiteFeature';
 import WebsitePlug from './website/WebsitePlug';
 import WebsiteList from './website/WebsiteList';
 import WebsiteFAQ from './website/WebsiteFAQ';
+import WebsiteFooter from './website/WebsiteFooter';
 
 const Website = () => {
   return (
@@ -15,6 +16,7 @@ const Website = () => {
       <WebsitePlug/>
       <WebsiteList/>
       <WebsiteFAQ/>
+      <WebsiteFooter/>
     </div>
   );
 }
