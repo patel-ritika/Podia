@@ -9,7 +9,7 @@
 .website_feature1_image img{
     width: 800px;
     margin-top: 5rem;
-    padding-right: 35rem;
+    padding-right: 35rem;   
 }
 
 .website_feature1_detail{
@@ -26,6 +26,32 @@
     text-align: left;
     font-size: 20px;
 }
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 768px) {
+    .website_feature1_image img {
+        width: 90%; /* Image takes full width of the container on mobile */
+        margin-top: 2rem;
+        padding-right: 0; /* Remove right padding for mobile */
+    }
+
+    .website_feature1_detail {
+        padding-left: 15px; /* Remove left padding for mobile */
+        margin-top: 1rem; /* Add some margin to separate the content from the image */
+        text-align: center; /* Center the content on mobile */
+    }
+
+    .website_feature1_detail h1 {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+
+    .website_feature1_detail p {
+        font-size: 16px; /* Reduce paragraph font size for mobile */
+    }
+}
+
+
+
 
 .website_feature2_image img{
     margin-top: 15rem;
@@ -67,6 +93,39 @@
     padding-left: 5rem;
 }
 
+/* Responsive styles for mobile */
+@media only screen and (max-width: 768px) {
+    .website_feature2_image img {
+        width: 90%; /* Image takes full width on mobile */
+        padding-left: 0; /* Remove left padding */
+        margin-top: 2rem; /* Adjust margin for mobile */
+    }
+
+    .website_feature2_detail {
+        margin-top: 1rem; /* Ensure content appears below the image */
+        padding-left: 0; /* Remove left padding */
+        text-align: center; /* Center content on mobile */
+    }
+
+    .website_feature2_detail h1 {
+        font-size: 24px; /* Reduce heading font size for mobile */
+        text-align: center; /* Center the text */
+    }
+
+    .website_feature2_detail p {
+        font-size: 16px; /* Adjust paragraph font size for mobile */
+        text-align: center; /* Center the text */
+    }
+
+    .website_feature2_detail button {
+        margin-right: 0; /* Adjust button positioning for mobile */
+        width: 200px;
+    }
+}
+
+
+
+
 .website_feature3_image img{
     margin-top: 10rem;
     padding-right: 35rem;
@@ -86,4 +145,29 @@
 .website_feature3_detail{
     padding-left: 60rem;
     margin-top: -30rem;
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 768px) {
+    .website_feature3_image img {
+        width: 90%; /* Make image take full width on mobile */
+        padding-right: 0; /* Remove padding */
+        margin-top: 2rem; /* Adjust margin for mobile */
+    }
+
+    .website_feature3_detail {
+        margin-top: 1rem; /* Ensure content appears below the image */
+        padding-left: 0; /* Remove left padding */
+        text-align: center; /* Center content on mobile */
+    }
+
+    .website_feature3_detail h1 {
+        font-size: 24px; /* Reduce heading font size for mobile */
+        text-align: center; /* Center the text */
+    }
+
+    .website_feature3_detail p {
+        font-size: 16px; /* Adjust paragraph font size for mobile */
+        text-align: center; /* Center the text */
+    }
 }
