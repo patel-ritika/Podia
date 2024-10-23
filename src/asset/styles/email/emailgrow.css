@@ -1,0 +1,67 @@
+/* Main container to use Flexbox */
+.emailgrow-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Left side styles */
+  .emailgrow-left {
+    width: 45%;
+  }
+  
+  .emailgrow-left h1 {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+  
+  .emailgrow-left h4 {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  
+  /* Right side styles */
+  .emailgrow-right {
+    width: 45%;
+  }
+  
+  .emailgrow-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .emailgrow-item .icon {
+    display: inline-block;
+    vertical-align: middle;
+    color: #f8f8f8;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .emailgrow-item h2 {
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .emailgrow-item h5 {
+    margin: 5px 0 0 34px; /* Added left margin to align paragraphs under heading */
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .emailgrow-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .emailgrow-left, .emailgrow-right {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
