@@ -1,0 +1,125 @@
+.email_card{
+    margin-top: 5rem;
+}
+
+.email_card1_image img{
+    width: 800px;
+    padding-right: 35rem;
+}
+
+.email_card1_detail{
+    padding-left: 60rem;
+    margin-top: -30rem;
+}
+
+.email_card1_detail h1{
+    text-align: left;
+    font-weight: 500;
+}
+
+.email_card1_detail h4{
+    text-align: left;
+    font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Stack the image and text vertically on tablet */
+    .email_card1_image, .email_card1_detail {
+        text-align: center;
+    }
+    
+    .email_card1_detail {
+        margin-top: 1.5rem; /* Adjust margin for smaller screens */
+        padding-left: 0; /* Remove left padding for smaller screens */
+    }
+    
+    .email_card1_image img {
+        width: 90%; /* Make the image smaller on tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for mobile */
+    .email_card1_detail {
+        margin-top: 1rem; /* Reduce margin further */
+    }
+    
+    .email_card1_image img {
+        padding-left: 1rem;
+        width: 90%; /* Make the image smaller on mobile */
+    }
+
+    .email_card1_detail h1 {
+        padding-left: 4rem;
+        font-size: 18px; /* Reduce font size for mobile */
+    }
+
+    .email_card1_detail h4 {
+        padding-left: 4rem;
+        font-size: 14px; /* Reduce font size for mobile */
+    }
+}
+
+
+
+
+
+.email_card2_image img{
+    width: 800px;
+    margin-top: 10rem;
+    padding-left: 35rem;
+}
+
+.email_card2_detail h1{
+    text-align: left;
+    font-weight: 500;
+}
+
+.email_card2_detail h4{
+    text-align: left;
+    font-weight: 400;
+}
+
+.email_card2_detail{
+    padding-left: 5rem;
+    margin-top: -25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Stack the image and text vertically on tablet */
+    .email_card2_image, .email_card2_detail {
+        text-align: center; /* Center text and image on smaller screens */
+    }
+
+    .email_card2_detail {
+        margin-top: 1.5rem; /* Adjust margin for smaller screens */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .email_card2_image img {
+        width: 90%; /* Slightly reduce the image size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for mobile screens */
+    .email_card2_detail {
+        margin-top: 1rem; /* Reduce the margin for better spacing */
+    }
+
+    .email_card2_image img {
+        width: 90%; /* Make the image smaller on mobile */
+    }
+
+    .email_card2_detail h1 {
+        padding-left: 4rem;
+        font-size: 18px; /* Reduce font size for h1 on mobile */
+    }
+
+    .email_card2_detail h4 {
+        padding-left: 4rem;
+        font-size: 14px; /* Reduce font size for h4 on mobile */
+    }
+}
