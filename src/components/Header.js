@@ -41,7 +41,16 @@ const Header = () => {
          <li>Website</li>
           </Link>
         
-        <li>Email</li>
+        <Link
+          to="/email"
+          onClick={() => setShowMenu(false)}
+          style={{ color: "black", textDecoration: "none"}}
+        >
+       <li>Email</li>
+        </Link>
+        
+
+
         <li className="submenu" onClick={handleSubMenuToggle}>
           Online Store
           {showSubMenu && (

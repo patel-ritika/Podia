@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Home from './components/Home';
 import Website from './components/Website';
-
+import Email from './components/Email';
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/website" element={<Website />} />
+        <Route path="/email" element={<Email />} />
       </Routes>
 
 
