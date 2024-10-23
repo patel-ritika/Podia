@@ -1,0 +1,103 @@
+/* General container for FAQ section */
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFDDAA; /* Light yellow background */
+    padding: 2rem;
+  }
+  
+  /* Left section with the heading */
+  .faq-left {
+    flex: 1;
+  }
+  
+  .faq-left h1 {
+    font-size: 36px;
+    color: #2E1503;
+  }
+  
+  /* Right section with questions */
+  .faq-right {
+    flex: 2;
+  }
+  
+  .faq-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .faq-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-size: 18px;
+    color: #2E1503;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* The question hover underline effect */
+  .faq-question {
+    position: relative;
+  }
+  
+  .faq-question::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #2E1503;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.4s ease;
+  }
+  
+  .faq-list li:hover .faq-question::after {
+    width: 100%;
+  }
+  
+  /* Styling the + icon */
+  .faq-icon {
+    font-size: 20px;
+    color: white;
+    background-color: #8B4513; /* Brown background */
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-list li:hover .faq-icon {
+    background-color: #5C3317; /* Darker brown on hover */
+  }
+  
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .faq-container {
+        flex-direction: column; /* Change layout to column on mobile */
+        align-items: center;
+        text-align: center;
+    }
+
+    .faq-left {
+        margin-bottom: 2rem; /* Add space between the heading and questions */
+    }
+
+    .faq-left h1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .faq-list li {
+        flex-direction: column; /* Stack icon and question vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    .faq-icon {
+        margin-top: 10px; /* Add space between the question and the icon */
+    }
+
+    .faq-list li {
+        font-size: 16px; /* Reduce font size for mobile */
+    }
+}

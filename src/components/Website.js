@@ -4,6 +4,7 @@ import WebsiteSale from './website/WebsiteSale';
 import WebsiteFeature from './website/WebsiteFeature';
 import WebsitePlug from './website/WebsitePlug';
 import WebsiteList from './website/WebsiteList';
+import WebsiteFAQ from './website/WebsiteFAQ';
 
 const Website = () => {
   return (
@@ -13,6 +14,7 @@ const Website = () => {
       <WebsiteFeature/>
       <WebsitePlug/>
       <WebsiteList/>
+      <WebsiteFAQ/>
     </div>
   );
 }
