@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Website from './components/Website';
 import Email from './components/Email';
+import OnlineStore from './components/OnlineStore';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/website" element={<Website />} />
         <Route path="/email" element={<Email />} />
+        <Route path="/online store" element={<OnlineStore />} />
       </Routes>
 
 

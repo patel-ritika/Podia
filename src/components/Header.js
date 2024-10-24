@@ -57,7 +57,14 @@ const Header = () => {
             <div className="submenu-content">
               <h2>Products</h2>
               <ul>
-                <li>Online Store</li>
+                <Link
+                  to="/online store"
+                  onClick={() => setShowMenu(false)}
+                  state={{ color: "black", textDecoration: "none"}}
+                >
+              <li>Online Store</li>
+              </Link>
+                
                 <li>Online Courses</li>
                 <li>Digital Downloads</li>
                 <li>Webinars</li>
