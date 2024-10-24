@@ -1,0 +1,72 @@
+/* Main container to use Flexbox */
+.emailleave-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+   background-color:#B099C8 ;
+  }
+  
+  /* Left side styles */
+  .emailleave-left {
+    width: 45%;
+  }
+  
+  .emailleave-left h1 {
+    color: #151B54;
+    font-size: 35px;
+    line-height: 1.5;
+  }
+  
+  .emailleave-left h4 {
+    font-size: 20px;
+    color: #151B54;
+    line-height: 1.8;
+  }
+  
+  /* Right side styles */
+  .emailleave-right {
+    width: 45%;
+  }
+  
+  .emailleave-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .emailleave-item .icon {
+    display: inline-block;
+    vertical-align: middle;
+    color: lavender;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .emailleave-item h2 {
+    color: #151B54;
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .emailleave-item h5 {
+    color: #151B54;
+    margin: 5px 0 0 34px; /* Added left margin to align paragraphs under heading */
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .emailleave-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .emailleave-left, .emailleave-right {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
