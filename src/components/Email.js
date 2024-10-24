@@ -5,6 +5,7 @@ import EmailGrow from './email/EmailGrow';
 import EmailCard from './email/EmailCard';
 import EmailList from './email/EmailList';
 import EmailLeave from './email/EmailLeave';
+import EmailFAQ from './email/EmailFAQ';
 
 const Email = () => {
   return (
@@ -15,6 +16,7 @@ const Email = () => {
       <EmailCard/>
       <EmailList/>
       <EmailLeave/>
+      <EmailFAQ/>
     </div>
   );
 }
