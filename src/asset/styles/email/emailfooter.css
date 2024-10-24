@@ -1,0 +1,25 @@
+.email_footer_image img{
+    width: 1519px;
+}
+
+/* For tablet screens */
+@media (max-width: 1024px) {
+    .email_footer_image img {
+        max-width: 100%; /* Ensure the image scales down to the screen size */
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    .email_footer_image img {
+        max-width: 100%; /* Set to the width of the mobile screen */
+    }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+    .email_footer_image img {
+        max-width: 100%; /* Adjust to fit very small screens */
+        height: auto; /* Maintain the aspect ratio */
+    }
+}

@@ -6,6 +6,7 @@ import EmailCard from './email/EmailCard';
 import EmailList from './email/EmailList';
 import EmailLeave from './email/EmailLeave';
 import EmailFAQ from './email/EmailFAQ';
+import EmailFooter from './email/EmailFooter';
 
 const Email = () => {
   return (
@@ -17,6 +18,7 @@ const Email = () => {
       <EmailList/>
       <EmailLeave/>
       <EmailFAQ/>
+      <EmailFooter/>
     </div>
   );
 }
