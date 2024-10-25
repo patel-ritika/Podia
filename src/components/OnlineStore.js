@@ -2,6 +2,7 @@ import React from 'react';
 import OnlineStoreTop from './onlinestore/OnlineStoreTop';
 import OnlineSell from './onlinestore/OnlineSell';
 import OnlineCoupon from './onlinestore/OnlineCoupon';
+import OnlineLady from './onlinestore/OnlineLady';
 
 
 const OnlineStore = () => {
@@ -10,6 +11,7 @@ const OnlineStore = () => {
       <OnlineStoreTop/>
       <OnlineSell/>
       <OnlineCoupon/>
+      <OnlineLady/>
     </div>
   );
 }
