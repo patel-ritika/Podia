@@ -1,0 +1,49 @@
+.online-sell {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  h5 {
+    margin-bottom: 20px;
+  }
+  
+  .online_box-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .online_box {
+    cursor: pointer;
+    background-color: #D6EBF2;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .online_box-title {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .online_box-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+  }
+  
+  .online_box-title:hover::after {
+    width: 100%;
+  }
+  
