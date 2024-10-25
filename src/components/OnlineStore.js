@@ -4,6 +4,7 @@ import OnlineSell from './onlinestore/OnlineSell';
 import OnlineCoupon from './onlinestore/OnlineCoupon';
 import OnlineLady from './onlinestore/OnlineLady';
 import OnlineVisit from './onlinestore/OnlineVisit';
+import OnlineLeave from './onlinestore/OnlineLeave';
 
 
 const OnlineStore = () => {
@@ -14,6 +15,7 @@ const OnlineStore = () => {
       <OnlineCoupon/>
       <OnlineLady/>
       <OnlineVisit/>
+      <OnlineLeave/>
     </div>
   );
 }

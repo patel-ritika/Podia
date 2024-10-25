@@ -1,0 +1,72 @@
+/* Main container to use Flexbox */
+.storeleave-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+   background-color:#D6EBF2 ;
+  }
+  
+  /* Left side styles */
+  .storeleave-left {
+    width: 45%;
+  }
+  
+  .storeleave-left h1 {
+    color: #000026;
+    font-size: 35px;
+    line-height: 1.5;
+  }
+  
+  .storeleave-left h4 {
+    font-size: 20px;
+    color: #000026;
+    line-height: 1.8;
+  }
+  
+  /* Right side styles */
+  .storeleave-right {
+    width: 45%;
+  }
+  
+  .storeleave-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .storeleave-item .icon {
+    display: inline-block;
+    vertical-align: middle;
+    color: #000026;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .storeleave-item h2 {
+    color: #000026;
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .storeleave-item h5 {
+    color: #000026;
+    margin: 5px 0 0 34px; /* Added left margin to align paragraphs under heading */
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .storeleave-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .storeleave-left, .storeleave-right {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
