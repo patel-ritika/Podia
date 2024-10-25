@@ -1,0 +1,81 @@
+.online-coupon {
+    text-align: center;
+    padding: 20px;
+    margin-top: 10rem;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  h5 {
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  
+  .coupon-image {
+    margin-top: 5rem;
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .content-item {
+    text-align: left;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .content-item h2 {
+    padding-left: 6rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+  }
+  
+  .content-item h2 svg {
+    margin-left: 8px; /* Space between text and icon */
+  }
+  
+  .content-item p {
+    margin-top: 8px;
+  }
+  
+  /* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .online-coupon {
+      padding: 10px;
+      margin-top: 5rem;
+    }
+  
+    /* Adjust image size for mobile */
+    .coupon-image {
+      max-width: 100%;
+      height: auto;
+      margin-top: 2rem;
+      margin-bottom: 10px;
+    }
+  
+    /* Make the grid layout single-column */
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    /* Content item adjustments for mobile */
+    .content-item {
+      padding: 10px;
+    }
+  
+    /* Adjust heading padding and font size */
+    .content-item h2 {
+      padding-left: 1rem;
+      font-size: 1.1em;
+    }
+}
