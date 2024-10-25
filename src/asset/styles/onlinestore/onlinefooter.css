@@ -1,0 +1,38 @@
+.storefooter{
+    margin-top: 100px;
+    background-color: skyblue;
+    height: 400px;
+}
+
+.storefooter_detail{
+    padding-top: 3rem;
+}
+
+.storefooter_detail h1{
+    color: #000026;
+    font-size: 40px;
+}
+
+.storefooter_detail h3{
+    font-size: 20px;
+    color: #000026;
+    font-weight: 400;
+}
+
+.storefooter_detail button{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000026;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.storefooter_detail button:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: #000026;
+}

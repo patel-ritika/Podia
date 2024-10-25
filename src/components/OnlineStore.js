@@ -6,6 +6,7 @@ import OnlineLady from './onlinestore/OnlineLady';
 import OnlineVisit from './onlinestore/OnlineVisit';
 import OnlineLeave from './onlinestore/OnlineLeave';
 import OnlineFAQ from './onlinestore/OnlineFAQ';
+import OnlineFooter from './onlinestore/OnlineFooter';
 
 
 const OnlineStore = () => {
@@ -18,6 +19,7 @@ const OnlineStore = () => {
       <OnlineVisit/>
       <OnlineLeave/>
       <OnlineFAQ/>
+      <OnlineFooter/>
     </div>
   );
 }
