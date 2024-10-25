@@ -1,0 +1,100 @@
+.store-sales {
+    text-align: center;
+    margin: 250px;
+  }
+  
+.store-sales h1{
+    font-size: 40px;
+}
+
+.store-sales h2{
+    font-weight: 400;
+}
+
+  .store_image-grid {
+    cursor: pointer;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .store_image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .store_image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+  }
+  
+  .store_image-container:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 0;
+    transition: height 0.3s ease;
+    border-radius: 0 0 50% 50%; /* Rounded bottom shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .store_image-container:hover .overlay {
+    height: 50%; /* On hover, show overlay from the bottom */
+  }
+  
+  .view-site {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .store_image-container:hover .view-site {
+    opacity: 1; /* Make "View Site" visible on hover */
+  }
+  
+  /* Responsive styles for mobile */
+@media only screen and (max-width: 768px) {
+    .store-sales {
+        margin: 50px 20px; /* Adjust margins for smaller screens */
+    }
+    
+    .store-sales h1 {
+        font-size: 24px; /* Smaller font size on mobile */
+    }
+
+    .store_image-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Display images in a single column on mobile */
+        gap: 20px;
+    }
+
+    .store_image-container img {
+        width: 100%; /* Ensure image takes full width of the container */
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .overlay {
+        height: 30%; /* Show smaller overlay on mobile */
+        border-radius: 0; /* No rounded corners for overlay on mobile */
+    }
+
+    .view-site {
+        font-size: 16px; /* Adjust text size for mobile */
+    }
+}
