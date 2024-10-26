@@ -31,3 +31,79 @@
 .coursetop_detail button:hover{
     transform: scale(1.1);
 }
+
+.coursetop_image img{
+    margin-top: 5rem;
+    padding-right: 35rem;
+}
+
+.coursetop_right{
+    padding-left: 60rem;
+    margin-top: -25rem;
+}
+
+.coursetop_right h1{
+    text-align: left;
+    font-size: 40px;
+}
+
+.coursetop_right h4{
+    text-align: left;
+    font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .coursetop {
+        padding: 10px;
+    }
+
+    .coursetop_detail h1 {
+        font-size: 32px; /* Smaller heading for mobile */
+    }
+
+    .coursetop_detail h4 {
+        font-size: 16px;
+    }
+
+    .coursetop_image img {
+        width: 100%; /* Full width for mobile */
+        margin-top: 2rem;
+    }
+
+    .coursetop_right {
+        padding: 0; /* Reset padding for mobile */
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .coursetop_right h1 {
+        font-size: 28px; /* Smaller heading for mobile */
+    }
+
+    .coursetop_right h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .coursetop_detail h1 {
+        font-size: 26px;
+    }
+
+    .coursetop_detail button {
+        width: 150px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .coursetop_right h1 {
+        padding-left: 4rem;
+        font-size: 24px;
+    }
+
+    .coursetop_right h4 {
+        padding-left: 4rem;
+        font-size: 12px;
+    }
+}
