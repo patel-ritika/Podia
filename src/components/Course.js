@@ -4,6 +4,7 @@ import CourseBuild from './courses/CourseBuild';
 import CourseSell from './courses/CourseSell';
 import CourseBundle from './courses/CourseBundle';
 import CourseMigration from './courses/CourseMigration';
+import CourseBusiness from './courses/CourseBusiness';
 
 const Course = () => {
   return (
@@ -13,6 +14,7 @@ const Course = () => {
       <CourseSell/>
       <CourseBundle/>
       <CourseMigration/>
+      <CourseBusiness/>
     </div>
   );
 }
