@@ -2,6 +2,7 @@ import React from 'react';
 import CourseTop from './courses/CourseTop';
 import CourseBuild from './courses/CourseBuild';
 import CourseSell from './courses/CourseSell';
+import CourseBundle from './courses/CourseBundle';
 
 const Course = () => {
   return (
@@ -9,6 +10,7 @@ const Course = () => {
       <CourseTop/>
       <CourseBuild/>
       <CourseSell/>
+      <CourseBundle/>
     </div>
   );
 }

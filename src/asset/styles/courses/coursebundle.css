@@ -1,0 +1,64 @@
+/* Main container to use Flexbox */
+.coursegrow-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Left side styles */
+  .coursegrow-left {
+    width: 45%;
+  }
+  
+  .coursegrow-left h1 {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+  
+  .coursegrow-left h4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  
+  /* Right side styles */
+  .coursegrow-right {
+    width: 45%;
+  }
+  
+  .coursegrow-item {
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+  .coursegrow-item h2 {
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .coursegrow-item h5 {
+    margin: 5px 0 0 34px; /* Added left margin to align paragraphs under heading */
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .coursegrow-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .coursegrow-left, .coursegrow-right {
+      width: 100%;
+      text-align: center;
+    }
+
+    .coursegrow-right{
+        margin-top: 4rem;
+    }
+  }
+  
