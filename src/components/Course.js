@@ -7,6 +7,7 @@ import CourseMigration from './courses/CourseMigration';
 import CourseBusiness from './courses/CourseBusiness';
 import CourseMen from './courses/CourseMen';
 import CourseList from './courses/CourseList';
+import CourseFAQ from './courses/CourseFAQ';
 
 const Course = () => {
   return (
@@ -19,6 +20,7 @@ const Course = () => {
       <CourseBusiness/>
       <CourseMen/>
       <CourseList/>
+      <CourseFAQ/>
     </div>
   );
 }
