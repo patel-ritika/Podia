@@ -8,6 +8,7 @@ import CourseBusiness from './courses/CourseBusiness';
 import CourseMen from './courses/CourseMen';
 import CourseList from './courses/CourseList';
 import CourseFAQ from './courses/CourseFAQ';
+import CourseFooter from './courses/CourseFooter';
 
 const Course = () => {
   return (
@@ -21,6 +22,7 @@ const Course = () => {
       <CourseMen/>
       <CourseList/>
       <CourseFAQ/>
+      <CourseFooter/>
     </div>
   );
 }

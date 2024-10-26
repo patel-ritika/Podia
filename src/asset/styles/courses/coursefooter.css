@@ -1,0 +1,38 @@
+.coursefooter{
+    margin-top: 100px;
+    background-color: #D6EBF2;
+    height: 400px;
+}
+
+.coursefooter_detail{
+    padding-top: 3rem;
+}
+
+.coursefooter_detail h1{
+    color: #000026;
+    font-size: 40px;
+}
+
+.coursefooter_detail h3{
+    font-size: 20px;
+    color: #000026;
+    font-weight: 400;
+}
+
+.coursefooter_detail button{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000026;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.coursefooter_detail button:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: #000026;
+}
