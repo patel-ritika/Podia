@@ -6,6 +6,7 @@ import CourseBundle from './courses/CourseBundle';
 import CourseMigration from './courses/CourseMigration';
 import CourseBusiness from './courses/CourseBusiness';
 import CourseMen from './courses/CourseMen';
+import CourseList from './courses/CourseList';
 
 const Course = () => {
   return (
@@ -17,6 +18,7 @@ const Course = () => {
       <CourseMigration/>
       <CourseBusiness/>
       <CourseMen/>
+      <CourseList/>
     </div>
   );
 }
