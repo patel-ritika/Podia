@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Website from './components/Website';
 import Email from './components/Email';
 import OnlineStore from './components/OnlineStore';
+import OnlineCourses from './components/Course';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/website" element={<Website />} />
         <Route path="/email" element={<Email />} />
         <Route path="/online store" element={<OnlineStore />} />
+        <Route path="/online courses" element={<OnlineCourses />} />
       </Routes>
 
 

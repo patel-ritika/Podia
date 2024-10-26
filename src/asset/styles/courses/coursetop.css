@@ -1,0 +1,33 @@
+.coursetop_detail{
+    background-color: #D6EBF2;
+    height: 400px;
+    margin-top: -2rem;
+}
+
+.coursetop_detail{
+    padding-top: 6rem;
+}
+
+.coursetop_detail h1{
+    font-size: 50px;
+}
+
+.coursetop_detail h4{
+    font-weight: 400;
+}
+
+.coursetop_detail button{
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #000026;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.coursetop_detail button:hover{
+    transform: scale(1.1);
+}

@@ -60,12 +60,21 @@ const Header = () => {
                 <Link
                   to="/online store"
                   onClick={() => setShowMenu(false)}
-                  state={{ color: "black", textDecoration: "none"}}
+                  style={{ color: "black", textDecoration: "none"}}
                 >
               <li>Online Store</li>
               </Link>
                 
-                <li>Online Courses</li>
+                <Link
+                  to="/online courses"
+                  onClick={() => setShowMenu(false)}
+                  style={{ color: "black", textDecoration: "none"}}
+                >
+             <li>Online Courses</li>
+                </Link>
+                
+
+
                 <li>Digital Downloads</li>
                 <li>Webinars</li>
                 <li>Coaching</li>
