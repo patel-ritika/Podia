@@ -74,8 +74,14 @@ const Header = () => {
                 </Link>
                 
 
-
-                <li>Digital Downloads</li>
+               <Link
+                  to="/digital download"
+                  onClick={() => setShowMenu(false)}
+                  style={{ color: "black", textDecoration: "none"}}
+                >
+               <li>Digital Downloads</li>
+                </Link>
+                
                 <li>Webinars</li>
                 <li>Coaching</li>
               </ul>

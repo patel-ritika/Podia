@@ -7,6 +7,7 @@ import Website from './components/Website';
 import Email from './components/Email';
 import OnlineStore from './components/OnlineStore';
 import OnlineCourses from './components/Course';
+import Download from './components/Download';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/email" element={<Email />} />
         <Route path="/online store" element={<OnlineStore />} />
         <Route path="/online courses" element={<OnlineCourses />} />
+        <Route path="/digital download" element={<Download />} />
       </Routes>
 
 
