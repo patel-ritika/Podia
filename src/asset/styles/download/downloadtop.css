@@ -1,0 +1,103 @@
+.downloadtop{
+    background-color: #D6EBF2;
+    height: 500px;
+    margin-top: -5rem;
+}
+
+.downloadtop_detail{
+    padding-top: 10rem;
+}
+
+.downloadtop_detail h1{
+    font-size: 40px;
+}
+
+.downloadtop_detail button{
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000026;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.downloadtop_detail button:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+}
+
+.downloadtop_image img{
+    margin-top: 5rem;
+    padding-left: 35rem;
+}
+
+.downloadtop_left h4{
+   text-align: left;
+   font-size: 20px;
+   padding-left: 10rem;
+}
+
+.downloadtop_left h1{
+    padding-right: 50rem;
+    font-size: 40px;
+}
+
+.downloadtop_left{
+    margin-top: -25rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .downloadtop {
+        flex-direction: column;
+        height: auto;
+        margin-top: 0;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .downloadtop_detail {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .downloadtop_detail h1 {
+        font-size: 28px;
+    }
+
+    .downloadtop_detail h4 {
+        font-size: 16px;
+    }
+
+    .downloadtop_detail button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .downloadtop_image img {
+        width: 90%;
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+
+    .downloadtop_left {
+        margin-top: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .downloadtop_left h1 {
+        font-size: 24px;
+        padding-left: 9rem;
+    }
+
+    .downloadtop_left h4 {
+        font-size: 16px;
+        padding-left: 4rem;
+    }
+}
