@@ -1,0 +1,36 @@
+.take h1{
+    font-size: 40px;
+}
+
+.take img{
+    width: 90%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .take h1 {
+        font-size: 28px;
+    }
+
+    .take h4 {
+        font-size: 16px;
+    }
+
+    .take img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .take h1 {
+        font-size: 24px;
+    }
+
+    .take h4 {
+        font-size: 14px;
+    }
+
+    .take img {
+        width: 70%;
+    }
+}
