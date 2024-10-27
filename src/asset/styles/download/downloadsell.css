@@ -1,0 +1,61 @@
+.digitalsell {
+    max-width: 930px;
+    margin: 10rem auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .digitalsell h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .digitalsell h4 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .digital_boxes {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+  }
+  
+  .digital_box {
+    flex: 0 0 calc(25% - 15px); /* Two boxes per row */
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+    min-width: 250px;
+  }
+  
+  .digital_box h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .digital_box p {
+    font-size: 16px;
+    color: black;
+  }
+  
+  /* Individual background colors for each box */
+  .digital_box1 { background-color: #F9E4BC; }  /* Red */
+  .digital_box2 { background-color: #D6EBF2; }  /* Green */
+  .digital_box3 { background-color: #B099C8; }  /* Blue */
+  .digital_box4 { background-color: #F9E4BC; }  /* Orange */
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .digital_boxes {
+      flex-direction: column;
+    }
+  
+    .digital_box {
+      flex: 1 1 100%;
+    }
+  }
+  
