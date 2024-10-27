@@ -7,6 +7,7 @@ import DownloadMigration from './download/DownloadMigration';
 import DownloadBusiness from './download/DownloadBusiness';
 import DownloadComes from './download/DownloadComes';
 import DownloadList from './download/DownloadList';
+import DownloadFAQ from './download/DownloadFAQ';
 
 const Download = () => {
   return (
@@ -19,6 +20,7 @@ const Download = () => {
       <DownloadBusiness/>
       <DownloadComes/>
       <DownloadList/>
+      <DownloadFAQ/>
     </div>
   );
 }
