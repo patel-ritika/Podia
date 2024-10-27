@@ -1,0 +1,57 @@
+.comes{
+    background-color: #D6EBF2;
+    height: 600px;
+    padding-top: 6rem;
+}
+
+.comes h1{
+    text-align: left;
+    padding-left: 30rem;
+}
+
+.comes h4{
+    text-align: left;
+    padding-left: 30rem;
+}
+
+.comes h5{
+    padding-left: 30rem;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .comes {
+        padding: 2rem;
+        text-align: center;
+        height: auto;
+    }
+
+    .comes h1 {
+        font-size: 28px;
+    }
+
+    .comes h4 {
+        font-size: 16px;
+    }
+
+    .comes h5 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .comes h1 {
+        font-size: 24px;
+    }
+
+    .comes h4 {
+        font-size: 14px;
+    }
+
+    .comes h5 {
+        font-size: 12px;
+    }
+}
