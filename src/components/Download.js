@@ -4,6 +4,7 @@ import DownloadSell from './download/DownloadSell';
 import DownloadTake from './download/DownloadTake';
 import DownloadBundle from './download/DownloadBundle';
 import DownloadMigration from './download/DownloadMigration';
+import DownloadBusiness from './download/DownloadBusiness';
 
 const Download = () => {
   return (
@@ -13,6 +14,7 @@ const Download = () => {
       <DownloadTake/>
       <DownloadBundle/>
       <DownloadMigration/>
+      <DownloadBusiness/>
     </div>
   );
 }
