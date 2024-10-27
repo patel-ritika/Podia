@@ -1,0 +1,64 @@
+/* Main container to use Flexbox */
+.digitalgrow-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Left side styles */
+  .digitalgrow-left {
+    width: 45%;
+  }
+  
+  .digitalgrow-left h1 {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+  
+  .digitalgrow-left h4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  
+  /* Right side styles */
+  .digitalgrow-right {
+    width: 45%;
+  }
+  
+  .digitalgrow-item {
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+  .digitalgrow-item h2 {
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .digitalgrow-item h5 {
+    margin: 5px 0 0 34px; /* Added left margin to align paragraphs under heading */
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .digitalgrow-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .digitalgrow-left, .digitalgrow-right {
+      width: 100%;
+      text-align: center;
+    }
+
+    .digitalgrow-right{
+        margin-top: 4rem;
+    }
+  }
+  
