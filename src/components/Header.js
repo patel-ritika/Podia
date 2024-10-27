@@ -82,7 +82,14 @@ const Header = () => {
                <li>Digital Downloads</li>
                 </Link>
                 
+                <Link
+                   to="/webinar"
+                   onClick={() => setShowMenu(false)}
+                   style={{ color: "black", textDecoration: "none"}}
+                >
                 <li>Webinars</li>
+                </Link>
+                
                 <li>Coaching</li>
               </ul>
             </div>
