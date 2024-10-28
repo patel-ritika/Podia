@@ -5,6 +5,7 @@ import Webgrow from './webinar/Webgrow';
 import Weblady from './webinar/Weblady';
 import WebList from './webinar/WebList';
 import WebFAQ from './webinar/WebFAQ';
+import WebFooter from './webinar/WebFooter';
 
 const Webinars = () => {
   return (
@@ -15,6 +16,7 @@ const Webinars = () => {
       <Weblady/>
       <WebList/>
       <WebFAQ/>
+      <WebFooter/>
     </div>
   );
 }
